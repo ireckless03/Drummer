@@ -1,55 +1,53 @@
-let numberOfDrumButtons = document.querySelectorAll(".drum").length
-// find first button in doc and adds event listener to button
+let numberOfDrumButtons = document.querySelectorAll(".drum").length;
+// find first button in doc and add event listener to the button
 for (let i = 0; i < numberOfDrumButtons; i++) {
 
   document.querySelectorAll(".drum")[i].addEventListener('click', function () {
 
     let buttonInnerHTML = this.innerHTML;
-    // What to do when click detected
+    // What to do when a click is detected
     switch (buttonInnerHTML) {
 
-      case w:
-        let tom1 = new Audio("sounds/tom-1.mp3")
-        tom1.play()
+      case 'w':
+        let tom1 = new Audio("sounds/tom-1.mp3");
+        tom1.play();
         break;
 
-      case: a
-        let tom2 = new Audio("sounds/tom-2.mp3")
-        tom2.play()
+      case 'a':
+        let tom2 = new Audio("sounds/tom-2.mp3");
+        tom2.play();
         break;
 
-      case: s
-        let tom3 = new Audio("sounds/tom-3.mp3")
-        tom3.play()
+      case 's':
+        let tom3 = new Audio("sounds/tom-3.mp3");
+        tom3.play();
         break;
 
-      case: d
-        let tom4 = new Audio("sounds/tom-4.mp3")
-        tom4.play()
+      case 'd':
+        let tom4 = new Audio("sounds/tom-4.mp3");
+        tom4.play();
         break;
 
-      case: s
-        let crash = new Audio("sounds/crash.mp3")
-        crash.play()
+      case 'j':
+        let crash = new Audio("sounds/crash.mp3");
+        crash.play();
         break;
 
-      case: d
-        let kick = new Audio("sounds/kick.mp3")
-        kick.play()
+      case 'k':
+        let kickbass = new Audio("sounds/kick-bass.mp3");
+        kickbass.play();
         break;
 
-      case: j
-        let snare = new Audio("sounds/snare.mp3")
-        snare.play()
+      case 'l':
+        let snare = new Audio("sounds/snare.mp3");
+        snare.play();
         break;
 
-      case: k
-        let kickbass = new Audio("sounds/kick-bass.mp3")
-        kickbass.play()
-        break;
 
-        default:
+      default:
+      // Handle any other cases or do nothing
     }
 
   });
 }
+
